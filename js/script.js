@@ -5,7 +5,7 @@ const products = [
     name: "Heart Necklace",
     cat: "necklaces",
     price: 50,
-    img: "/VALENTINO-Jewellery/products/product-002.jpeg",
+    img: "products/product-002.jpeg",
     desc: "A delicate heart pendant necklace with an elegant and timeless design."
   },
 
