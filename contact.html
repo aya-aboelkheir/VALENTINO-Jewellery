@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact | VALENTINO</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="announcement">
+    FREE SHIPPING ON ORDERS OVER $150 · DISCOVER THE NEW COLLECTION
+  </div>
+
+  <header class="header">
+
+  <a class="logo" href="index.html">
+    VALENTINO
+    <small>JEWELLERY</small>
+  </a>
+
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Collections</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">Bag</a>
+  </nav>
+
+  <div class="actions">
+
+    <button data-search>⌕</button>
+
+    <button onclick="location.href='shop.html'">
+      ♡ <b class="wishCount">0</b>
+    </button>
+
+    <button data-open-cart>
+      Bag <b class="cartCount">0</b>
+    </button>
+
+    <!-- Mobile Menu Button -->
+    <button class="menu-toggle" onclick="toggleMobileMenu()">
+      ☰
+    </button>
+
+  </div>
+
+</header>
+
+<nav class="mobile-nav" id="mobileNav">
+
+  <button class="mobile-close" onclick="toggleMobileMenu()">
+    ×
+  </button>
+
+  <a href="index.html">Home</a>
+  <a href="shop.html">Collections</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="cart.html">Bag</a>
+
+</nav>
+
+  <main class="contact">
+
+    <div>
+      <p class="eyebrow">GET IN TOUCH</p>
+
+      <h1>
+        Let's make it<br>
+        <em>personal.</em>
+      </h1>
+
+      <p style="color:#888;margin-top:20px;max-width:430px">
+        For product questions, private appointments, styling advice or general
+        enquiries, send us a message.
+      </p>
+    </div>
+
+    <form
+      class="form"
+      onsubmit="event.preventDefault();toast('Thank you. We will contact you shortly.');this.reset()"
+    >
+      <input required placeholder="Your name">
+
+      <input
+        required
+        type="email"
+        placeholder="Email address"
+      >
+
+      <input placeholder="Phone number">
+
+      <textarea
+        required
+        rows="7"
+        placeholder="How can we help?"
+      ></textarea>
+
+      <button class="gold-btn" type="submit">
+        SEND MESSAGE
+      </button>
+    </form>
+
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="index.html">
+      VALENTINO
+      <small>JEWELLERY</small>
+    </a>
+
+    <span>
+      © 2026 VALENTINO Jewellery · Luxury by design.
+    </span>
+
+    <span>
+       <a href="https://www.facebook.com/share/1HK34tXFnf/" target="_blank">Facebook</a> .
+      <a href="https://www.instagram.com/valentino._.brand?igsi=MW5weXdibHBrZjJ0YQ==" target="_blank">Instagram</a>
+    </span>
+  </footer>
+
+  <div id="searchPanel" class="search">
+    <button class="close" data-close="#searchPanel">×</button>
+
+    <div class="search-box">
+      <p class="eyebrow">SEARCH</p>
+      <input
+        id="searchInput"
+        placeholder="Search jewellery..."
+      >
+    </div>
+  </div>
+
+  <div id="cartDrawer" class="drawer">
+    <button class="close" data-close="#cartDrawer">×</button>
+
+    <h2>Your Bag</h2>
+
+    <div id="cartItems"></div>
+
+    <div class="sumline">
+      <span>Total</span>
+      <strong id="cartTotal">$0</strong>
+    </div>
+
+    <button
+      class="gold-btn"
+      style="width:100%;margin-top:20px"
+      onclick="checkout()"
+    >
+      CHECKOUT
+    </button>
+  </div>
+
+  <div id="productModal" class="modal">
+    <div class="modal-card">
+      <button class="close" data-close="#productModal">×</button>
+
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

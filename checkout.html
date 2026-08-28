@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Checkout | VALENTINO</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="announcement">
+    FREE SHIPPING ON ORDERS OVER $150 · DISCOVER THE NEW COLLECTION
+  </div>
+
+  <header class="header">
+
+  <a class="logo" href="index.html">
+    VALENTINO
+    <small>JEWELLERY</small>
+  </a>
+
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Collections</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">Bag</a>
+  </nav>
+
+  <div class="actions">
+
+    <button data-search>⌕</button>
+
+    <button onclick="location.href='shop.html'">
+      ♡ <b class="wishCount">0</b>
+    </button>
+
+    <button data-open-cart>
+      Bag <b class="cartCount">0</b>
+    </button>
+
+    <!-- Mobile Menu Button -->
+    <button class="menu-toggle" onclick="toggleMobileMenu()">
+      ☰
+    </button>
+
+  </div>
+
+</header>
+
+<nav class="mobile-nav" id="mobileNav">
+
+  <button class="mobile-close" onclick="toggleMobileMenu()">
+    ×
+  </button>
+
+  <a href="index.html">Home</a>
+  <a href="shop.html">Collections</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="cart.html">Bag</a>
+
+</nav>
+
+  <main class="page">
+
+    <div class="heading">
+      <p class="eyebrow">SECURE CHECKOUT</p>
+      <h1>Complete your order</h1>
+      <p>
+        Fill in your details and send your order directly to us on WhatsApp.
+      </p>
+    </div>
+
+
+    <div class="checkout-grid">
+
+      <section>
+
+        <div class="steps">
+          <span class="step active">01 INFORMATION</span>
+          <span class="step">02 WHATSAPP</span>
+          <span class="step">03 CONFIRMATION</span>
+        </div>
+
+
+        <form class="form" id="checkoutForm">
+
+          <input id="customerName" required placeholder="Full name">
+
+<input
+  id="customerPhone"
+  required
+  type="tel"
+  placeholder="Phone number"
+>
+
+<select id="customerGovernorate" required>
+  <option value="">Select governorate</option>
+  <option>Cairo</option>
+  <option>Giza</option>
+  <option>Qalyubia</option>
+  <option>Dakahlia</option>
+  <option>Alexandria</option>
+  <option>Beheira</option>
+  <option>Damietta</option>
+  <option>Port Said</option>
+  <option>Ismailia</option>
+  <option>Suez</option>
+  <option>Sharqia</option>
+  <option>Gharbia</option>
+  <option>Monufia</option>
+  <option>Kafr El Sheikh</option>
+  <option>Fayoum</option>
+  <option>Beni Suef</option>
+  <option>Minya</option>
+  <option>Assiut</option>
+  <option>Sohag</option>
+  <option>Qena</option>
+  <option>Luxor</option>
+  <option>Aswan</option>
+  <option>Red Sea</option>
+  <option>Matrouh</option>
+  <option>North Sinai</option>
+  <option>South Sinai</option>
+  <option>New Valley</option>
+</select>
+
+<input
+  id="customerAddress"
+  required
+  placeholder="Full address"
+>
+
+          <button class="gold-btn" type="submit">
+            SEND ORDER ON WHATSAPP
+          </button>
+
+        </form>
+
+      </section>
+
+
+      <aside class="summary">
+
+        <h2>Your Order</h2>
+
+        <div id="checkoutItems"></div>
+
+        <div class="sumline">
+          <span>Total</span>
+          <strong id="checkoutTotal">$0</strong>
+        </div>
+
+      </aside>
+
+    </div>
+
+  </main>
+
+
+  <footer class="footer">
+
+    <a class="logo" href="index.html">
+      VALENTINO
+      <small>JEWELLERY</small>
+    </a>
+
+    <span>
+      © 2026 VALENTINO Jewellery · Luxury by design.
+    </span>
+
+    <span>
+       <a href="https://www.facebook.com/share/1HK34tXFnf/" target="_blank">Facebook</a> .
+      <a href="https://www.instagram.com/valentino._.brand?igsi=MW5weXdibHBrZjJ0YQ==" target="_blank">Instagram</a>
+    </span>
+
+  </footer>
+
+
+  <!-- Search -->
+
+  <div id="searchPanel" class="search">
+
+    <button class="close" data-close="#searchPanel">
+      ×
+    </button>
+
+    <div class="search-box">
+
+      <p class="eyebrow">SEARCH</p>
+
+      <input
+        id="searchInput"
+        placeholder="Search jewellery..."
+      >
+
+    </div>
+
+  </div>
+
+
+  <!-- Cart Drawer -->
+
+  <div id="cartDrawer" class="drawer">
+
+    <button class="close" data-close="#cartDrawer">
+      ×
+    </button>
+
+    <h2>Your Bag</h2>
+
+    <div id="cartItems"></div>
+
+    <div class="sumline">
+
+      <span>Total</span>
+
+      <strong id="cartTotal">$0</strong>
+
+    </div>
+
+    <button
+      class="gold-btn"
+      style="width:100%;margin-top:20px"
+      onclick="checkout()"
+    >
+      CHECKOUT
+    </button>
+
+  </div>
+
+
+  <!-- Product Modal -->
+
+  <div id="productModal" class="modal">
+
+    <div class="modal-card">
+
+      <button class="close" data-close="#productModal">
+        ×
+      </button>
+
+      <div id="modalContent"></div>
+
+    </div>
+
+  </div>
+
+
+  <div id="toast" class="toast"></div>
+
+
+  <script src="js/script.js"></script>
+
+
+  <script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const checkoutItems =
+        document.getElementById("checkoutItems");
+
+      const checkoutTotal =
+        document.getElementById("checkoutTotal");
+
+
+      // If cart is empty
+
+      if (!cart || cart.length === 0) {
+
+        checkoutItems.innerHTML =
+          '<p class="empty">Your bag is empty.</p>';
+
+        return;
+
+      }
+
+
+      // Show products
+
+      checkoutItems.innerHTML = cart.map(function (item) {
+
+        const product =
+          products.find(function (p) {
+            return p.id === item.id;
+          });
+
+
+        if (!product) return "";
+
+
+        return `
+          <div class="sumline">
+
+            <span>
+              ${product.name} × ${item.qty}
+            </span>
+
+            <span>
+              $${(product.price * item.qty).toLocaleString()}
+            </span>
+
+          </div>
+        `;
+
+      }).join("");
+
+
+      // Calculate total
+
+      const total = cart.reduce(function (sum, item) {
+
+        const product =
+          products.find(function (p) {
+            return p.id === item.id;
+          });
+
+        if (!product) return sum;
+
+        return sum + (product.price * item.qty);
+
+      }, 0);
+
+
+      checkoutTotal.textContent =
+        "$" + total.toLocaleString();
+
+    });
+
+
+
+    // ==============================
+    // SEND ORDER TO WHATSAPP
+    // ==============================
+
+    document
+      .getElementById("checkoutForm")
+      .addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+
+        // WhatsApp number
+        const whatsappNumber = "201227564585";
+
+
+        // Customer information
+
+        const name =
+          document.getElementById("customerName").value.trim();
+
+        const phone =
+          document.getElementById("customerPhone").value.trim();
+
+        const address =
+          document.getElementById("customerAddress").value.trim();
+
+        const governorate =
+  document.getElementById("customerGovernorate").value;
+
+
+        // Calculate order total
+
+        let total = 0;
+
+
+        // Products text
+
+        let productsText = "";
+
+
+        cart.forEach(function (item) {
+
+          const product =
+            products.find(function (p) {
+              return p.id === item.id;
+            });
+
+
+          if (!product) return;
+
+
+          const itemTotal =
+            product.price * item.qty;
+
+
+          total += itemTotal;
+
+
+          productsText +=
+            "• " +
+            product.name +
+            " × " +
+            item.qty +
+            " = " +
+            itemTotal.toLocaleString() +
+            "EGP";
+
+        });
+
+
+        // WhatsApp message
+
+        const message =
+
+`*NEW VALENTINO ORDER*
+
+━━━━━━━━━━━━━━━━━━
+
+*CUSTOMER DETAILS*
+
+Name: ${name}
+Phone: ${phone}
+Governorate: ${governorate}
+Address: ${address}
+
+━━━━━━━━━━━━━━━━━━
+
+*ORDER DETAILS*
+
+${productsText}
+
+━━━━━━━━━━━━━━━━━━
+
+*TOTAL: $${total.toLocaleString()}*
+
+Payment: Cash on Delivery
+
+━━━━━━━━━━━━━━━━━━`;
+
+
+
+        // Encode message
+
+        const whatsappURL =
+          "https://wa.me/" +
+          whatsappNumber +
+          "?text=" +
+          encodeURIComponent(message);
+
+
+        // Clear cart
+
+        cart = [];
+
+        save();
+
+
+        // Open WhatsApp
+
+        window.open(
+          whatsappURL,
+          "_blank"
+        );
+
+      });
+
+  </script>
+
+</body>
+
+</html>
