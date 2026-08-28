@@ -1,12 +1,21 @@
 {
   "name": "VALENTINO Jewellery",
   "short_name": "VALENTINO",
-  "description": "Discover elegant and timeless jewellery from VALENTINO Jewellery.",
-  "start_url": "/",
-  "scope": "/",
+  "start_url": "./",
   "display": "standalone",
-  "background_color": "#080808",
-  "theme_color": "#080808",
-  "orientation": "portrait",
-  "icons": []
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "description": "Discover elegant and timeless jewellery from VALENTINO Jewellery.",
+  "icons": [
+    {
+      "src": "./icons/launchericon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./icons/launchericon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }
