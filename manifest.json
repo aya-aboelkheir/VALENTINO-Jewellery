@@ -1,0 +1,12 @@
+{
+  "name": "VALENTINO Jewellery",
+  "short_name": "VALENTINO",
+  "description": "Discover elegant and timeless jewellery from VALENTINO Jewellery.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#080808",
+  "theme_color": "#080808",
+  "orientation": "portrait",
+  "icons": []
+}
