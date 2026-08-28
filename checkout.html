@@ -94,7 +94,13 @@
   id="customerPhone"
   required
   type="tel"
+  name="phone"
   placeholder="Phone number"
+  pattern="01[0-9]{9}"
+  minlength="11"
+  maxlength="11"
+  inputmode="numeric"
+  title="Enter a valid Egyptian phone number (11 digits starting with 01)"
 >
 
 <select id="customerGovernorate" required>
@@ -408,7 +414,7 @@
 
 `*NEW VALENTINO ORDER*
 
-━━━━━━━━━━━━━━━━━━
+━━━━━━━
 
 *CUSTOMER DETAILS*
 
@@ -417,19 +423,19 @@ Phone: ${phone}
 Governorate: ${governorate}
 Address: ${address}
 
-━━━━━━━━━━━━━━━━━━
+━━━━━━━
 
 *ORDER DETAILS*
 
 ${productsText}
 
-━━━━━━━━━━━━━━━━━━
+━━━━━━━
 
 *TOTAL: $${total.toLocaleString()}*
 
 Payment: Cash on Delivery
 
-━━━━━━━━━━━━━━━━━━`;
+━━━━━━━`;
 
 
 
