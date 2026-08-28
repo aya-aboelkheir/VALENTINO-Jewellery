@@ -5,7 +5,7 @@ const products = [
     name: "Heart Necklace",
     cat: "necklaces",
     price: 50,
-    img: "/products/product-002.jpeg",
+    img: "products/product-002.jpeg",
     desc: "A delicate heart pendant necklace with an elegant and timeless design."
   },
 
@@ -14,7 +14,7 @@ const products = [
     name: "Crystal Ring Set",
     cat: "rings",
     price: 90,
-    img: "/products/product-003.jpeg",
+    img: "products/product-003.jpeg",
     desc: "A refined crystal ring set featuring elegant gold-tone details."
   },
 
@@ -23,7 +23,7 @@ const products = [
     name: "Gold Bracelet Set",
     cat: "bracelets",
     price: 250,
-    img: "/products/product-004.jpeg",
+    img: "products/product-004.jpeg",
     desc: "A sophisticated collection of gold-tone bracelets designed to complement every look."
   },
 
@@ -32,7 +32,7 @@ const products = [
     name: "Six-Piece Bangle Set",
     cat: "bracelets",
     price: 170,
-    img: "/products/product-006.jpeg",
+    img: "products/product-006.jpeg",
     desc: "Six elegant bangles with sleek gold-tone finishes for a polished layered look."
   },
 
@@ -41,7 +41,7 @@ const products = [
     name: "Heart Necklace Set",
     cat: "necklaces",
     price: 150,
-    img: "/products/product-007.jpeg",
+    img: "products/product-007.jpeg",
     desc: "A romantic heart-inspired necklace set featuring elegant layered gold-tone details."
   },
 
@@ -50,7 +50,7 @@ const products = [
     name: "Star Charm Necklace Set",
     cat: "necklaces",
     price: 100,
-    img: "/products/product-008.jpeg",
+    img: "products/product-008.jpeg",
     desc: "A delicate necklace set adorned with charming star-inspired details."
   },
 
@@ -59,7 +59,7 @@ const products = [
     name: "Crystal Statement Ring",
     cat: "rings",
     price: 80,
-    img: "/products/product-009.jpeg",
+    img: "products/product-009.jpeg",
     desc: "A striking statement ring featuring a luminous crystal centerpiece."
   },
 
@@ -68,7 +68,7 @@ const products = [
     name: "Floral Cuff Ring",
     cat: "rings",
     price: 85,
-    img: "/products/product-010.jpeg",
+    img: "products/product-010.jpeg",
     desc: "A distinctive floral-inspired ring with an elegant gold-tone finish."
   },
 
@@ -77,7 +77,7 @@ const products = [
     name: "Two Crystal Bracelets",
     cat: "bracelets",
     price: 160,
-    img: "/products/product-014.jpeg",
+    img: "products/product-014.jpeg",
     desc: "A refined pair of crystal bracelets designed to add subtle sparkle to your style."
   },
 
@@ -86,7 +86,7 @@ const products = [
     name: "Gold Necklace Trio",
     cat: "necklaces",
     price: 140,
-    img: "/products/product-015.jpeg",
+    img: "products/product-015.jpeg",
     desc: "A beautiful trio of gold-tone necklaces designed for an elegant layered look."
   },
 
@@ -95,7 +95,7 @@ const products = [
     name: "Swan Pink Jewelry Set",
     cat: "sets",
     price: 110,
-    img: "/products/product-016.jpeg",
+    img: "products/product-016.jpeg",
     desc: "A graceful pink jewelry set inspired by the elegance of swan-inspired details."
   },
 
@@ -104,7 +104,7 @@ const products = [
     name: "Gold Necklace",
     cat: "necklaces",
     price: 175,
-    img: "/products/product-017.jpeg",
+    img: "products/product-017.jpeg",
     desc: "A refined gold-tone necklace featuring an elegant layered design."
   },
 
@@ -113,7 +113,7 @@ const products = [
     name: "3-Piece Bracelet Combo",
     cat: "sets",
     price: 70,
-    img: "/products/product-018.jpeg",
+    img: "products/product-018.jpeg",
     desc: "A stylish three-piece bracelet combination designed to be worn together."
   },
 
@@ -122,7 +122,7 @@ const products = [
     name: "Gold Bracelet Bundle Set",
     cat: "sets",
     price: 140,
-    img: "/products/product-019.jpeg",
+    img: "products/product-019.jpeg",
     desc: "A curated set of elegant gold-tone bracelets for a sophisticated stacked look."
   },
 
@@ -131,7 +131,7 @@ const products = [
     name: "Gold Necklace Bundle",
     cat: "necklaces",
     price: 260,
-    img: "/products/product-020.jpeg",
+    img: "products/product-020.jpeg",
     desc: "A luxurious necklace bundle featuring multiple gold-tone pieces for effortless layering."
   },
 
@@ -140,7 +140,7 @@ const products = [
     name: "Minimal Butterfly Necklace Trio",
     cat: "sets",
     price: 100,
-    img: "/products/product-021.jpeg",
+    img: "products/product-021.jpeg",
     desc: "A delicate trio of minimal necklaces featuring elegant butterfly-inspired details."
   },
 
@@ -149,7 +149,7 @@ const products = [
     name: "Layered Chain Bracelet",
     cat: "sets",
     price: 200,
-    img: "/products/product-022.jpeg",
+    img: "products/product-022.jpeg",
     desc: "A sophisticated layered bracelet design combining delicate gold-tone chains."
   },
 
@@ -158,7 +158,7 @@ const products = [
     name: "Gold Star Necklaces Combo",
     cat: "sets",
     price: 200,
-    img: "/products/product-023.jpeg",
+    img: "products/product-023.jpeg",
     desc: "An elegant combination of gold-tone necklaces featuring delicate star-inspired details."
   },
 
@@ -167,7 +167,7 @@ const products = [
     name: "Black Watch & Bracelet Combo",
     cat: "sets",
     price: 170,
-    img: "/products/product-025.jpeg",
+    img: "products/product-025.jpeg",
     desc: "A bold black watch paired with a matching bracelet for a modern coordinated look."
   },
 
@@ -176,7 +176,7 @@ const products = [
     name: "Black & Gold Bracelet Combo",
     cat: "bracelets",
     price: 75,
-    img: "/products/product-026.jpeg",
+    img: "products/product-026.jpeg",
     desc: "A stylish combination of black and gold-tone bracelets with a modern elegant finish."
   },
 
@@ -185,7 +185,7 @@ const products = [
     name: "Silver Jewelry Set",
     cat: "sets",
     price: 200,
-    img: "/products/product-027.jpeg",
+    img: "products/product-027.jpeg",
     desc: "A sophisticated silver-tone jewelry set designed for a polished and elegant look."
   },
 
@@ -194,7 +194,7 @@ const products = [
     name: "Black Clover Bracelet Set",
     cat: "sets",
     price: 130,
-    img: "/products/product-028.jpeg",
+    img: "products/product-028.jpeg",
     desc: "A distinctive bracelet set featuring elegant black clover-inspired details."
   },
 
@@ -203,7 +203,7 @@ const products = [
     name: "Three-Layer Necklace",
     cat: "sets",
     price: 100,
-    img: "/products/product-030.jpeg",
+    img: "products/product-030.jpeg",
     desc: "A delicate three-layer necklace designed to create an effortlessly elegant look."
   },
 
@@ -212,7 +212,7 @@ const products = [
     name: "Gold Bangle Set",
     cat: "sets",
     price: 160,
-    img: "/products/product-031.jpeg",
+    img: "products/product-031.jpeg",
     desc: "A refined gold-tone bangle set designed for a graceful layered finish."
   },
 
@@ -221,7 +221,7 @@ const products = [
     name: "Gold Bracelet",
     cat: "bracelets",
     price: 200,
-    img: "/products/product-032.jpeg",
+    img: "products/product-032.jpeg",
     desc: "A classic gold-tone bracelet with a clean and elegant design."
   },
 
@@ -230,7 +230,7 @@ const products = [
     name: "Trio Bracelets",
     cat: "sets",
     price: 200,
-    img: "/products/product-035.jpeg",
+    img: "products/product-035.jpeg",
     desc: "A sophisticated trio of bracelets designed to create a stylish layered effect."
   },
 
@@ -239,7 +239,7 @@ const products = [
     name: "Hand Chain",
     cat: "bracelets",
     price: 80,
-    img: "/products/product-036.jpeg",
+    img: "products/product-036.jpeg",
     desc: "A delicate hand chain bracelet featuring elegant black clover-inspired details."
   },
 
@@ -248,7 +248,7 @@ const products = [
     name: "Black Watch & Bracelet Set",
     cat: "sets",
     price: 170,
-    img: "/products/product-039.jpeg",
+    img: "products/product-039.jpeg",
     desc: "A sleek black watch paired with a coordinating bracelet for a complete look."
   },
 
@@ -257,7 +257,7 @@ const products = [
     name: "Butterfly Necklace",
     cat: "necklaces",
     price: 75,
-    img: "/products/product-040.jpeg",
+    img: "products/product-040.jpeg",
     desc: "A delicate butterfly pendant necklace with a refined gold-tone finish."
   },
 
@@ -266,7 +266,7 @@ const products = [
     name: "Chain Bracelet",
     cat: "bracelets",
     price: 120,
-    img: "/products/product-041.jpeg",
+    img: "products/product-041.jpeg",
     desc: "A classic gold-tone chain bracelet with a delicate and versatile design."
   },
 
@@ -275,7 +275,7 @@ const products = [
     name: "Watch Bracelet",
     cat: "bracelets",
     price: 100,
-    img: "/products/product-042.jpeg",
+    img: "products/product-042.jpeg",
     desc: "An elegant bracelet-style watch design with a refined gold-tone finish."
   },
 
@@ -284,7 +284,7 @@ const products = [
     name: "Silver Tennis Bracelet",
     cat: "bracelets",
     price: 100,
-    img: "/products/product-046.jpeg",
+    img: "products/product-046.jpeg",
     desc: "A refined silver-tone tennis bracelet with a sleek sparkling finish."
   },
 
@@ -293,7 +293,7 @@ const products = [
     name: "Floral Necklace Set",
     cat: "sets",
     price: 220,
-    img: "/products/product-047.jpeg",
+    img: "products/product-047.jpeg",
     desc: "An elegant floral-inspired necklace set with delicate gold-tone details."
   },
 
@@ -302,7 +302,7 @@ const products = [
     name: "Four-Piece Clover Set",
     cat: "sets",
     price: 180,
-    img: "/products/product-048.jpeg",
+    img: "products/product-048.jpeg",
     desc: "A charming four-piece jewelry set featuring elegant clover-inspired details."
   },
 
@@ -311,7 +311,7 @@ const products = [
     name: "Black Clover Bracelet Set",
     cat: "sets",
     price: 160,
-    img: "/products/product-049.jpeg",
+    img: "products/product-049.jpeg",
     desc: "A sophisticated bracelet set featuring distinctive black clover details."
   },
 
@@ -320,7 +320,7 @@ const products = [
     name: "Long Layered Necklace",
     cat: "necklaces",
     price: 110,
-    img: "/products/product-050.jpeg",
+    img: "products/product-050.jpeg",
     desc: "A graceful long layered necklace designed for an elegant statement look."
   },
 
@@ -329,7 +329,7 @@ const products = [
     name: "Star Drop Necklace",
     cat: "necklaces",
     price: 120,
-    img: "/products/product-051.jpeg",
+    img: "products/product-051.jpeg",
     desc: "A delicate gold-tone necklace adorned with elegant star drop details."
   },
 
@@ -338,7 +338,7 @@ const products = [
     name: "Star Cascade Necklace",
     cat: "necklaces",
     price: 100,
-    img: "/products/product-052.jpeg",
+    img: "products/product-052.jpeg",
     desc: "An elegant necklace featuring a graceful cascade of delicate star details."
   },
 
@@ -347,7 +347,7 @@ const products = [
     name: "Pink Crystal Hand Chain",
     cat: "bracelets",
     price: 110,
-    img: "/products/product-054.jpeg",
+    img: "products/product-054.jpeg",
     desc: "A delicate hand chain bracelet accented with beautiful pink crystal details."
   },
 
@@ -356,7 +356,7 @@ const products = [
     name: "Crystal Hand-Chain Set",
     cat: "sets",
     price: 200,
-    img: "/products/product-055.jpeg",
+    img: "products/product-055.jpeg",
     desc: "An elegant hand-chain set featuring refined crystal details and a delicate finish."
   }
 
