@@ -358,6 +358,23 @@ const products = [
     price: 200,
     img: "products/product-055.jpeg",
     desc: "An elegant hand-chain set featuring refined crystal details and a delicate finish."
+  },
+   {
+    id: 58,
+    name: "Swarovski Jewelry Set",
+    cat: "sets",
+    price: 175,
+    img: "products/product-058.jpeg",
+    desc: "An elegant Swarovski jewelry set featuring a necklace and bracelet."
+  },
+
+  {
+    id: 59,
+    name: "Luxury Jewelry Combo",
+    cat: "sets",
+    price: 300,
+    img: "products/product-059.jpeg",
+    desc: "A beautiful jewelry combo featuring carefully selected elegant pieces."
   }
 
 ];
