@@ -388,7 +388,7 @@ function card(p) {
       >
         ${wish.includes(p.id) ? "♥" : "♡"}
       </button>
-      <div class="photo" style="background-image:url('${p.img}')"></div>
+      <div class="photo" style="background-image:url('${location.hostname.includes('github.io') ? '/VALENTINO-Jewellery/' + p.img : p.img}')"></div>
       <div class="info">
         <h3>${p.name}</h3>
         <p>${p.cat}</p>
